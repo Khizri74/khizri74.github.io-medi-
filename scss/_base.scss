@@ -32,12 +32,9 @@ body {
         column-gap: 50px;
     }
 
-    &:nth-child(3){
-        align-self: center;
-
-        & img {
-            margin: 0 0 0 10px;
-        }
+    &:nth-child(3) a{
+        display: flex;
+        column-gap: 5px;
     }
     
     & .nav__btn {

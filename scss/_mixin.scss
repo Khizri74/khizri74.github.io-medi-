@@ -1,0 +1,99 @@
+@mixin heading-btn-color {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-dark-green);
+        color: var(--white-color);
+        column-gap: 11px;
+        padding: 11px 15px;
+
+        &:hover {
+            background-color: var(--color-light-green);
+        }
+}
+
+@mixin hover-underLine-dark{
+    a {
+        background-image: linear-gradient(var(--color-dark-green), var(--color-dark-green));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    a:hover {
+        background-size: 100% 2px;
+    }
+}
+
+@mixin hover-underLine-light{
+    a {
+        background-image: linear-gradient(var(--color-light-green), var(--color-light-green));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    a:hover {
+        background-size: 100% 2px;
+    }
+}
+
+@mixin hover-button-color{
+    :hover {
+        background-color: var(--color-dark-green);
+        color: var(--white-color);
+        border: none;
+        transition-duration: 0.45s;
+        cursor: pointer;
+    }
+}
+
+@mixin hover-button-clean {
+    :hover {
+        background-color: var(--color-light-green);
+        color: var(--white-color);
+        border: none;
+        transition-duration: 0.45s;
+    }
+}
+
+@mixin bg-button-color {
+    background-color: var(--color-dark-green);
+    border: none;
+    color: var(--white-color);
+    width: 168px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+@mixin heading-hover-button-clean {
+    :hover {
+        background-color: var(--color-light-green);
+        color: var(--white-color);
+        border: 1px solid var(--color-dark-green);
+        transition-duration: 0.45s;
+    }
+}
+
+
+@mixin heading-hover-button-color {
+    :hover {
+        background-color: var(--color-dark-green);
+        color: var(--white-color);
+        border: 1px solid var(--color-light-green);
+        transition-duration: 0.45s;
+    }
+}
+
+
+@mixin button-arrow {
+    padding: 20px 15px;
+    border: 1px solid var(--white-color);
+
+    &:hover {
+        background-color: var(--color-light-green);
+    }
+}
